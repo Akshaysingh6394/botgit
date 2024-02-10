@@ -1,0 +1,224 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #122139;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  h1{
+    
+    color:#fff;
+    padding-bottom: 50px;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .teddy{
+    position: relative;
+    width: 260px;
+    height: 330px;
+    border: none;
+    background-color: inherit;
+    outline:none;
+    
+  }
+  .teddy div{
+    position: absolute;
+  }
+  .right-ear{
+    background-color: rgb(246, 84, 10);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    left: 30px;
+    box-shadow: 0 0 0 20px rgb(241, 145, 100) inset;
+  }
+  .left-ear{
+    background-color: rgb(246, 84, 10);
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    right: 30px;
+    box-shadow: 0 0 0 20px rgb(241, 145, 100) inset;
+  }
+  .head{
+    background-color:rgb(241, 145, 100);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+.right-eye{
+    background-color: rgb(255,255,255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:65px;
+    left: 45px;
+    box-shadow: 2px -2px 0 6px inset; 
+
+}
+.left-eye{
+    background-color: rgb(255,255,255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:65px;
+    right: 45px;
+    box-shadow: 2px -2px 0 6px inset; 
+    animation: eye 4s ease-in-out infinite;
+
+}
+.mouth-area{
+    background-color:  rgb(246, 84, 10);
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100px;
+    height: 70px;
+    border-radius: 50%;
+    bottom:5px;
+}
+.nose{
+    background-color: rgb(0,0,0);
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nose-inner {
+    width: 10px;
+    height: 8px;
+    background-color: rgb(255,255,255);
+    border-radius: 50%;
+    top: 3px;
+    right: 8px;
+}
+.right-cheek{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 0 0 rgb(115,80,45) inset;
+    bottom: 10px;
+    left: 20px;
+}
+.left-cheek{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px -2px 0 0 rgb(115,80,45) inset;
+    bottom: 10px;
+    right: 20px;
+}
+.body{
+    background-color: rgb(241, 145, 100);
+    width: 170px;
+    height: 190px;
+    border-radius: 50%;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 0 24px  rgb(244, 100, 33) inset;
+
+}
+.right-arm{
+    width: 70px;
+    height: 60px;
+    background-color: rgb(244, 100, 33);
+    top: 130px;
+    left: 0;
+    border-radius: 70px 0 0 0 / 60px 0 0 0;
+
+}
+.right-arm .arm-inner {
+    width: 50px;
+    height: 80px;
+    bottom: 0;
+    border-radius: 50px 0 0 0 / 80px 0 0 0;
+    box-shadow: 10px 22px 0 0   rgb(244, 100, 33) inset;
+    left: 55px;
+}
+
+.left-arm{
+    width: 70px;
+    height: 60px;
+    background-color: rgb(244, 100, 33);
+    top: 130px;
+    right:0;
+    border-radius: 0 70px 0 0 / 0 60px 0 0;
+
+}
+.left-arm .arm-inner{
+    width: 50px;
+    height: 80px;
+    bottom: 0;
+    border-radius: 0 50px 0 0 / 0 80px 0 0;
+    box-shadow: -10px 22px 0 0  rgb(244, 100, 33) inset;
+    right: 55px;
+
+}
+.right-arm .paw{
+    background: rgb(246, 84, 10);
+    width: 80px;
+    height: 60px;
+    top: 30px;
+    left:0;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 10px  rgb(226, 124, 76) inset;
+}
+.left-arm .paw {
+    background: rgb(246, 84, 10);
+    width: 80px;
+    height: 60px;
+    top: 30px;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 10px  rgb(226, 124, 76) inset;
+}
+
+.right-leg{
+    width: 90px;
+    height: 70px;
+    background:  rgb(246, 84, 10);
+    border-radius: 45px 45px 0 0 / 70px 70px 0 0;
+    bottom: 40px;
+    left: 10px;
+}
+.left-leg{
+    width: 90px;
+    height: 70px;
+    background: rgb(246, 84, 10);
+    border-radius: 45px 45px 0 0 / 70px 70px 0 0;
+    bottom: 40px;
+    right: 10px;
+
+}
+.foot  {
+    width: 100%;
+    height: 80px;
+    top: 30px;
+    background: rgb(246, 84, 10);
+    box-shadow: 0 5px 0 10px rgb(226, 124, 76) inset;
+    border-radius: 50%;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #eee530, 0 0 40px #eee530, 0 0 50px #eee530, 0 0 60px #eee530, 0 0 70px #eee530;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+
